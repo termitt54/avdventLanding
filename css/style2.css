@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn {
+    background-color: #ffb61d;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #121212;
+  }
+  
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #121212;
+  }
+
+  .page {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .page__content {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .page__header {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 31px;
+
+  }
+  
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .main__nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  
+    align-items: center;
+  }
+  
+  .main__nav li:not(:last-child) {
+    margin-right: 36px;
+  }
+  
+  .main__nav a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+  }
+  
+  .page__logo {
+    width: 171px;
+    height: 57px;
+  }
+  
+  .page__logo img {
+    width: 171px;
+    height: 57px;
+  }
+  
+  .nav__contact {
+    border-left: 1px solid #dddddd;
+    padding-left: 36px;
+  }
+  
+  .section__travels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  
+  .travels__info {
+    width: 100%;
+    max-width: 453px;
+  }
+  
+  .title_own {
+    font-size: 48px;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 16px;
+  }
+  
+  .travels__info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #121212;
+    margin-bottom: 48px;
+  }
+  
+  .travels__image {
+    min-width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn_start {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 12px 41px;
+    border-radius: 8px;
+  }
+  
+  .section__looking {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 64px;
+  }
+  
+  .looking__info .title {
+      margin-bottom: 8px;
+  }
+  
+  .looking__info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #121212;
+  }
+  
+  .looking__image {
+    display: flex;
+  
+    align-items: center;
+    min-width: 645px;
+  }
+  
+  .section__experience {
+    width: 100%;
+    padding: 150px 0;
+  }
+  
+  .experience__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .experience h2::before {
+    position: absolute;
+    content: "";
+    top: 97px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffb61d;
+    height: 2px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience__items {
+    display: flex;
+    width: 100%;
+    padding-top: 98px;
+  }
+  
+  .experience__items li:not(:last-child) {
+    margin-right: 80px;
+  }
+  
+  .experience__list li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experience__list li p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #121212;
+    margin-top: 4px;
+  }
+  
+  .items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .items img {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+  }
+  
+  .section__weather {
+    padding-top: 101px;
+    padding-bottom: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .weather__info {
+    width: 100%;
+    max-width: 560px;
+  }
+  
+  .weather__info .title {
+      margin-bottom: 16px;
+  }
+  
+  .weather__info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #828282;
+    margin-bottom: 40px;
+  }
+  
+  .weather__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 645px;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 477px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    max-width: 317px;
+    height: 51px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #828282;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    
+    min-width: 150px;
+    min-height: 51px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px 24px;
+    font-style: normal;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 66px 0 62px 0;
+  }
+  
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #ebeaed;
+    margin-bottom: 40px;
+  }
+  
+  .footer__nav {
+    display: flex;
+  
+    align-items: center;
+    width: 100%;
+    width: 241px;
+  }
+  
+  .footer__nav li:not(:last-child) {
+    margin-right: 41px;
+  }
+  
+  .footer__nav a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+  }
+  
+  .footer__bottom {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__copyright {
+    color: #151439;
+    opacity: 0.4;
+    font-size: 16px;
+    font-style: normal;
+    margin-left: 11px;
+  }
+  
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 130px;
+  }
+  
+  .footer__social a {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+  }
+  

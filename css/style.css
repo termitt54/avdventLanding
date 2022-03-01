@@ -51,7 +51,7 @@ h3 {
   color: #121212;
 }
 
-.page-header {
+.page__header {
   width: 100%;
   padding-top: 32px;
   padding-bottom: 31px;
@@ -59,7 +59,7 @@ h3 {
   padding-right: 179px;
 }
 
-.header-top {
+.header__top {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -68,9 +68,13 @@ h3 {
 .main__nav {
   display: flex;
   width: 100%;
-  max-width: 382px;
-  justify-content: space-between;
+  justify-content: flex-end;
+
   align-items: center;
+}
+
+.main__nav li:not(:last-child) {
+  margin-right: 36px;
 }
 
 .main__nav a {
@@ -79,12 +83,12 @@ h3 {
   color: #000;
 }
 
-.page-logo {
+.page__logo {
   width: 171px;
   height: 57px;
 }
 
-.page-logo img {
+.page__logo img {
   width: 171px;
   height: 57px;
 }
@@ -94,12 +98,14 @@ h3 {
   padding-left: 36px;
 }
 
-.travels {
+.section__travels {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 99px;
   padding-left: 180px;
+  padding-top: 82px;
+  padding-bottom: 82px;
 }
 
 .travels__info {
@@ -111,20 +117,18 @@ h3 {
   font-size: 48px;
   font-weight: 700;
   color: #121212;
-  max-height: 116px;
+  margin-bottom: 16px;
 }
 
 .travels__info p {
   font-size: 20px;
   font-weight: 400;
   color: #121212;
-  padding-top: 16px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
-.travels__logo {
+.travels__image {
   min-width: 650px;
-  min-height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,30 +141,34 @@ h3 {
   border-radius: 8px;
 }
 
-.looking {
+.section__looking {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding-left: 55px;
+  padding-top: 65px;
+  padding-bottom: 64px;
+  padding-left: 153px;
   padding-right: 180px;
+}
+
+.looking__info .title {
+    margin-bottom: 8px;
 }
 
 .looking__info p {
   font-size: 20px;
   font-weight: 400;
   color: #121212;
-  padding-top: 8px;
 }
 
-.looking__logo {
+.looking__image {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   min-width: 645px;
-  min-height: 550px;
 }
 
-.experience {
+.section__experience {
   width: 100%;
   padding: 150px 220px;
 }
@@ -188,14 +196,16 @@ h3 {
 
 .experience__items {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  min-width: 1000px;
   padding-top: 98px;
 }
 
+.experience__items li:not(:last-child) {
+  margin-right: 80px;
+}
+
 .experience__list li {
-  max-width: 280px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -218,9 +228,11 @@ h3 {
   margin-right: 24px;
 }
 
-.weather {
+.section__weather {
+  padding-top: 101px;
+  padding-bottom: 101px;
   padding-left: 180px;
-  padding-right: 55px;
+  padding-right: 91px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -231,20 +243,22 @@ h3 {
   max-width: 560px;
 }
 
+.weather__info .title {
+    margin-bottom: 16px;
+}
+
 .weather__info p {
   font-size: 20px;
   font-weight: 400;
   color: #828282;
-  padding-top: 16px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.weather__Logo {
+.weather__image {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 645px;
-  height: 550px;
 }
 
 .form {
@@ -266,9 +280,9 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  width: 100%;
-  max-width: 150px;
-  height: 51px;
+  
+  min-width: 150px;
+  min-height: 51px;
   border: none;
   border-radius: 8px;
   font-size: 20px;
@@ -288,14 +302,19 @@ input[type="submit"] {
   align-items: center;
   padding-bottom: 25px;
   border-bottom: 2px solid #ebeaed;
+  margin-bottom: 40px;
 }
 
 .footer__nav {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   width: 100%;
   width: 241px;
+}
+
+.footer__nav li:not(:last-child) {
+  margin-right: 41px;
 }
 
 .footer__nav a {
@@ -305,8 +324,7 @@ input[type="submit"] {
 }
 
 .footer__bottom {
-  margin-top: 40px;
-  margin-left: 11px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,6 +335,7 @@ input[type="submit"] {
   opacity: 0.4;
   font-size: 16px;
   font-style: normal;
+  margin-left: 11px;
 }
 
 .footer__social {
@@ -325,4 +344,10 @@ input[type="submit"] {
   align-items: center;
   width: 100%;
   max-width: 130px;
+}
+
+.footer__social a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
