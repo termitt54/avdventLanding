@@ -51,12 +51,25 @@ h3 {
   color: #121212;
 }
 
-.page__header {
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page__content {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
   width: 100%;
   padding-top: 32px;
   padding-bottom: 31px;
-  padding-left: 170px;
-  padding-right: 179px;
 }
 
 .header__top {
@@ -102,10 +115,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 99px;
-  padding-left: 180px;
   padding-top: 82px;
   padding-bottom: 82px;
+  width: 100%;
 }
 
 .travels__info {
@@ -128,10 +140,14 @@ h3 {
 }
 
 .travels__image {
-  min-width: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.travels__image img {
+  width: 100%;
+  max-width: 541px;
 }
 
 .btn_start {
@@ -144,15 +160,20 @@ h3 {
 .section__looking {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 65px;
   padding-bottom: 64px;
-  padding-left: 153px;
-  padding-right: 180px;
+}
+
+.looking__info {
+  width: 100%;
+  max-width: 560px;
 }
 
 .looking__info .title {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .looking__info p {
@@ -163,14 +184,17 @@ h3 {
 
 .looking__image {
   display: flex;
-
   align-items: center;
-  min-width: 645px;
+}
+
+.looking__image img {
+  width: 100%;
+  max-width: 450px;
 }
 
 .section__experience {
   width: 100%;
-  padding: 150px 220px;
+  padding: 150px 0;
 }
 
 .experience__list {
@@ -181,7 +205,7 @@ h3 {
   width: 100%;
 }
 
-.experience h2::before {
+.section__experience h2::before {
   position: absolute;
   content: "";
   top: 97px;
@@ -231,11 +255,10 @@ h3 {
 .section__weather {
   padding-top: 101px;
   padding-bottom: 101px;
-  padding-left: 180px;
-  padding-right: 91px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .weather__info {
@@ -244,7 +267,7 @@ h3 {
 }
 
 .weather__info .title {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .weather__info p {
@@ -258,7 +281,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 645px;
+}
+
+.weather__image img {
+  width: 100%;
+  max-width: 572px;
 }
 
 .form {
@@ -280,7 +307,6 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  
   min-width: 150px;
   min-height: 51px;
   border: none;
@@ -293,7 +319,7 @@ input[type="submit"] {
 
 .footer {
   width: 100%;
-  padding: 66px 180px 62px 169px;
+  padding: 66px 0 62px 0;
 }
 
 .footer__top {
@@ -324,7 +350,6 @@ input[type="submit"] {
 }
 
 .footer__bottom {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -347,7 +372,7 @@ input[type="submit"] {
 }
 
 .footer__social a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
