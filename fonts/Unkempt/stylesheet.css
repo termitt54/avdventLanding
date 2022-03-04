@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Unkempt';
+    src: url('Unkempt-Regular.eot');
+    src: local('Unkempt Regular'), local('Unkempt-Regular'),
+        url('Unkempt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Unkempt-Regular.woff2') format('woff2'),
+        url('Unkempt-Regular.woff') format('woff'),
+        url('Unkempt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unkempt';
+    src: url('Unkempt-Bold.eot');
+    src: local('Unkempt Bold'), local('Unkempt-Bold'),
+        url('Unkempt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Unkempt-Bold.woff2') format('woff2'),
+        url('Unkempt-Bold.woff') format('woff'),
+        url('Unkempt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

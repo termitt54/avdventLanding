@@ -18,7 +18,7 @@
 @media all and (max-width: 920px) {
   .looking__info {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .weather__info {
@@ -46,7 +46,6 @@
 
   .title {
     font-size: 32px;
-    text-align: center;
   }
 
   .travels__info {
@@ -63,7 +62,7 @@
   }
 
   .section__travels {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
 
   .travels__info p {
@@ -71,7 +70,7 @@
   }
 
   .section__looking {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
 
   .looking__info p {
@@ -79,7 +78,7 @@
   }
 
   .section__experience {
-    padding: 75px 0;
+    padding: 50px 0;
   }
 
   .experience__list li p {
@@ -87,7 +86,7 @@
   }
 
   .section__weather {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
 
   .weather__info .title {
@@ -98,9 +97,22 @@
     font-size: 18px;
     margin-bottom: 15px;
   }
+
+  .footer {
+    padding: 25px 0;
+  }
 }
 
 @media all and (max-width: 770px) {
+
+  .title_own {
+    font-size: 34px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
   .header__top {
     flex-direction: column;
     justify-content: center;
@@ -117,24 +129,28 @@
 
   .section__travels {
     flex-direction: column-reverse;
-    text-align: center;
   }
 
   .travels__info {
-    margin-top: 15px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .travels__info .btn_start {
+    align-self: center;
+  } 
 
   .section__looking {
     flex-direction: column;
-    text-align: center;
   }
 
   .looking__info {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   .section__experience {
-    padding: 50px 0;
+    padding: 25px 0;
   }
 
   .looking__image {
@@ -146,10 +162,16 @@
   }
   .experience__items {
     flex-direction: column;
+    max-width: 400px;
+    padding-top: 50px;
+  }
+
+  .section__experience h2::before {
+    top: 60px;
   }
 
   .experience__items li {
-    align-items: center;
+    
     margin-bottom: 20px;
   }
 
@@ -159,17 +181,26 @@
 
   .experience__items li p {
     max-width: 450px;
-    text-align: center;
+    
   }
 
   .section__weather {
     flex-direction: column-reverse;
   }
 
+  .weather__image {
+    width: 100%;
+    max-width: 450px;
+  }
+
   .weather__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 15px;
     width: 100%;
     max-width: 500px;
+    margin-right: 0px;
   }
 
   .weather__info .title {
@@ -179,6 +210,16 @@
 
   .weather__info p {
     margin-bottom: 25px;
+    max-width: 360px;
+  }
+
+  input[type="submit"] {
+    margin-top: 15px;
+}
+
+  .weather__info form {
+    display: flex;
+    flex-direction: column;
   }
 
   input[type="text"] {
@@ -195,11 +236,12 @@
   }
 
   .footer {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
 
   .footer__top {
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .footer__logo {
@@ -234,9 +276,6 @@
 }
 
 @media all and (max-width: 540px) {
-  .weather__info {
-    text-align: center;
-  }
 
   input[type="text"] {
     margin-right: 0px;
@@ -247,13 +286,39 @@
   }
 }
 
+@media all and (max-width: 460px) {
+  .experience__items {
+    flex-direction: column;
+    max-width: 350px;
+    padding-top: 50px;
+  }
+
+  .section__experience h2::before {
+    top: 100px;
+  }
+
+}
+
 @media all and (max-width: 440px) {
+
+  .title {
+    font-size: 30px;
+  }
+
   .main__nav li:not(:last-child) {
     margin-right: 18px;
   }
 
   .nav__contact {
     padding-left: 18px;
+  }
+
+  .experience__list li h3 {
+    font-size: 18px;
+  }
+
+  .experience__list li p {
+    font-size: 14px;
   }
 }
 

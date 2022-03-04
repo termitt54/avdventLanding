@@ -98,12 +98,35 @@ h3 {
 }
 
 .page__logo {
-  width: 171px;
+  position: relative;
+  z-index: 2;
+  /*width: 171px;*/
 }
 
-.page__logo img {
-  width: 171px;
+.page__logo-title {
+  position: relative;
+  font-size: 48px;
+  font-family: 'Unkempt', sans-serif;
+  font-weight: bold;
+  z-index: 2;
 }
+
+.page__logo::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -10px;
+  background-color: #64FCD9;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*.page__logo img {
+  width: 171px;
+}*/
 
 .nav__contact {
   border-left: 1px solid #dddddd;
@@ -264,6 +287,7 @@ h3 {
 .weather__info {
   width: 100%;
   max-width: 560px;
+  margin-right: 15px;
 }
 
 .weather__info .title {
@@ -347,6 +371,33 @@ input[type="submit"] {
   color: #000;
 }
 
+.footer__logo {
+  position: relative;
+  z-index: 2;
+  /*width: 171px;*/
+}
+
+.page__logo-title {
+  position: relative;
+  font-size: 48px;
+  font-family: 'Unkempt', sans-serif;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.footer__logo::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -10px;
+  background-color: #64FCD9;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -361,6 +412,10 @@ input[type="submit"] {
   margin-left: 11px;
 }
 
+.footer__copyright p {
+  width: 255px;
+}
+
 .footer__social {
   display: flex;
   justify-content: flex-end;
@@ -373,3 +428,4 @@ input[type="submit"] {
   align-items: center;
   padding: 10px;
 }
+
