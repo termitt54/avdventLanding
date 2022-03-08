@@ -112,7 +112,7 @@ p {
   margin-right: 36px;
 }
 
-.header__nav .header__nav-link {
+.header__nav .header__nav-item-link {
   font-size: 16px;
   font-weight: normal;
   color: #000;
@@ -133,6 +133,8 @@ p {
 }
 
 .travels__text {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 453px;
 }
@@ -163,6 +165,8 @@ p {
 }
 
 .btn_travels {
+  width: 100%;
+  max-width: 237px;
   font-size: 24px;
   font-weight: 700;
   padding: 12px 41px;
@@ -234,7 +238,7 @@ p {
 .experience__cards {
   display: flex;
   width: 100%;
-  padding-top: 98px;
+  margin-top: 98px;
 }
 
 .experience__item {
@@ -302,12 +306,12 @@ p {
   max-width: 572px;
 }
 
-.form_weather {
+.form__weather {
   display: flex;
   max-width: 477px;
 }
 
-.form_weather-email {
+.form__input-email {
   width: 100%;
   max-width: 317px;
   height: 51px;
@@ -320,7 +324,7 @@ p {
   margin-right: 10px;
 }
 
-.form_weather-submit {
+.form__input-submit {
   min-width: 150px;
   min-height: 51px;
   border: none;
@@ -356,7 +360,7 @@ p {
   margin-right: 41px;
 }
 
-.footer__nav-link {
+.footer__nav-item-link {
   font-size: 16px;
   font-weight: normal;
   color: #000;
@@ -364,14 +368,6 @@ p {
 
 .footer__logo {
   position: relative;
-  z-index: 2;
-}
-
-.logo_footer {
-  position: relative;
-  font-size: 48px;
-  font-family: "Unkempt", sans-serif;
-  font-weight: bold;
   z-index: 2;
 }
 
@@ -411,7 +407,7 @@ p {
   width: 100%;
 }
 
-.socials-link {
+.socials_link {
   display: flex;
   align-items: center;
   padding: 10px;

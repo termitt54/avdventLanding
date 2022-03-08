@@ -9,9 +9,14 @@
     max-width: 480px;
   }
 
-  .form_weather-email {
+  .form__input-email {
     width: 100%;
     max-width: 250px;
+    font-size: 16px;
+  }
+
+  .form__input-submit {
+    font-size: 16px;
   }
 }
 
@@ -21,20 +26,24 @@
     max-width: 450px;
   }
 
+  .experience__item-head-title {
+    font-size: 22px;
+  }
+
   .weather__text {
     width: 100%;
     max-width: 400px;
   }
 
-  .form_weather-email {
+  .form__input-email {
     height: 40px;
     padding: 10px 15px;
   }
 
-  .form_weather-submit {
+  .form__input-submit {
     min-width: 130px;
     min-height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 15px;
   }
 }
@@ -53,6 +62,8 @@
   }
 
   .btn_travels {
+    width: 100%;
+    max-width: 180px;
     font-size: 20px;
     padding: 12px 25px;
   }
@@ -78,11 +89,16 @@
   }
 
   .experience {
-    padding: 50px 0;
+    padding: 50px 30px;
+  }
+
+  .experience__item-head-title {
+    font-size: 20px;
+    white-space: nowrap;
   }
 
   .experience__description {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .weather {
@@ -166,7 +182,7 @@
   }
 
   .title_experience::before {
-    top: 60px;
+    display: none;
   }
 
   .experience__item {
@@ -210,25 +226,25 @@
     max-width: 360px;
   }
 
-  .form_weather-submit {
+  .form__input-submit {
     margin-top: 15px;
   }
 
-  .form_weather {
+  .form__weather {
     display: flex;
     flex-direction: column;
   }
 
-  .form_weather-email {
+  .form__input-email {
     max-width: 350px;
     height: 50px;
     padding: 12px 15px;
   }
 
-  .form_weather-submit {
+  .form__input-submit {
     min-width: 130px;
     min-height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 15px;
   }
 
@@ -273,28 +289,23 @@
 }
 
 @media all and (max-width: 540px) {
-  .form_weather-email {
+  .form__input-email {
     margin-right: 0px;
   }
 
-  .form_weather-submit {
+  .form__input-submit {
     margin-top: 15px;
   }
 }
 
-@media all and (max-width: 445px) {
-    .title_experience {
-    text-align: center;
-    }
-
-    .title_experience::before {
-        top: 97px;
-    }
-}
 
 @media all and (max-width: 440px) {
   .title {
     font-size: 30px;
+  }
+
+  .btn_travels {
+    max-width: 180px;
   }
 
   .header__nav .header__nav-item:not(:last-child) {

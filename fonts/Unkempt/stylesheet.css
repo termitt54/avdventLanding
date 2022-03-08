@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'Unkempt';
-    src: url('Unkempt-Regular.eot');
-    src: local('Unkempt Regular'), local('Unkempt-Regular'),
-        url('Unkempt-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Unkempt-Regular.woff2') format('woff2'),
-        url('Unkempt-Regular.woff') format('woff'),
-        url('Unkempt-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Unkempt';
