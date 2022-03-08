@@ -153,13 +153,9 @@ p {
   margin-bottom: 48px;
 }
 
-.travels__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .travels__img {
+  display: block;
   width: 100%;
   max-width: 541px;
 }
@@ -198,13 +194,9 @@ p {
   color: #121212;
 }
 
-.looking__image {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-}
 
 .looking__img {
+  display: block;
   width: 100%;
   max-width: 450px;
 }
@@ -295,13 +287,8 @@ p {
   margin-bottom: 40px;
 }
 
-.weather__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .weather__img {
+  display: block;
   width: 100%;
   max-width: 572px;
 }
