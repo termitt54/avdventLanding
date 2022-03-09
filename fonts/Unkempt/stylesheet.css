@@ -1,7 +1,6 @@
 
 @font-face {
     font-family: 'Unkempt';
-    src: url('Unkempt-Bold.eot');
     src: local('Unkempt Bold'), local('Unkempt-Bold'),
         url('Unkempt-Bold.eot?#iefix') format('embedded-opentype'),
         url('Unkempt-Bold.woff2') format('woff2'),
