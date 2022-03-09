@@ -1,5 +1,5 @@
-@import "/fonts/Unkempt/stylesheet.css";
-@import "/fonts/NunitoSans/stylesheet.css";
+@import "../fonts/Unkempt/stylesheet.css";
+@import "../fonts/NunitoSans/stylesheet.css";
 
 * {
   box-sizing: border-box;
