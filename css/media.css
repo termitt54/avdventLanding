@@ -4,6 +4,10 @@
     max-width: 500px;
   }
 
+  .looking__picture {
+    margin-right: 40px;
+  }
+
   .weather__text {
     width: 100%;
     max-width: 480px;
@@ -15,7 +19,7 @@
     font-size: 16px;
   }
 
-  .form__input-submit {
+  .form__input-btn {
     font-size: 16px;
   }
 }
@@ -23,10 +27,10 @@
 @media all and (max-width: 920px) {
   .looking__text {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
   }
 
-  .experience__cards-item-head-title {
+  .title_experiance_cards {
     font-size: 22px;
   }
 
@@ -40,7 +44,7 @@
     padding: 10px 15px;
   }
 
-  .form__input-submit {
+  .form__input-btn {
     min-width: 130px;
     min-height: 40px;
     font-size: 16px;
@@ -53,7 +57,7 @@
   padding: 0 35px;
 }
 
-  .experience__cards-item-head-title {
+  .title_experiance_cards {
     font-size: 20px;
   }
 
@@ -96,7 +100,7 @@
     padding: 50px 0px;
   }
 
-  .experience__cards-item-head-title {
+  .title_experiance_cards {
     font-size: 20px;
     white-space: nowrap;
   }
@@ -156,6 +160,10 @@
     flex-direction: column;
   }
 
+  .travels__img {
+    max-width: 400px;
+  }
+
   .btn_travels {
     align-self: center;
   }
@@ -166,6 +174,11 @@
 
   .looking__text {
     margin-bottom: 35px;
+  }
+
+  .looking__img {
+    margin-right: 0;
+    max-width: 400px;
   }
 
   .experience {
@@ -182,7 +195,7 @@
   .experience__cards {
     flex-wrap: wrap;
     max-width: 400px;
-    padding-top: 50px;
+    padding-top: 20px;
     margin-top: 0;
   }
 
@@ -206,9 +219,8 @@
     flex-direction: column-reverse;
   }
 
-  .weather__image {
-    width: 100%;
-    max-width: 450px;
+  .weather__img {
+    max-width: 400px;
   }
 
   .weather__text {
@@ -231,23 +243,27 @@
     max-width: 360px;
   }
 
-  .form__input-submit {
+  .form__input-btn {
     margin-top: 15px;
   }
 
   .form_weather {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .form__input-email {
-    max-width: 350px;
+    max-width: 360px;
     height: 50px;
     padding: 12px 15px;
+    margin-right: 0;
   }
 
-  .form__input-submit {
-    min-width: 130px;
+  .form__input-btn {
+    max-width: 360px;
+    width: 100%;
     min-height: 50px;
     font-size: 16px;
     padding: 12px 15px;
@@ -306,7 +322,7 @@
     margin-right: 0px;
   }
 
-  .form__input-submit {
+  .form__input-btn {
     margin-top: 15px;
   }
 }
@@ -329,7 +345,7 @@
     padding-left: 18px;
   }
 
-  .experience__cards-item-head-title {
+  .title_experiance_cards {
     font-size: 20px;
   }
 
@@ -346,12 +362,20 @@
     margin-right: 0px;
   }
 
-  .form__input-submit {
+  .form__input-btn {
     margin-top: 15px;
   }
 }
 
 @media all and (max-width: 395px) {
+    .title {
+      font-size: 26px;
+    }
+
+    .title_experiance_cards {
+      font-size: 22px;
+    }
+
     .header__nav {
       flex-wrap: wrap;
     }
