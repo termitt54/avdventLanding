@@ -30,7 +30,7 @@
     max-width: 400px;
   }
 
-  .title_experiance_cards {
+  .title_cards {
     font-size: 22px;
   }
 
@@ -57,7 +57,7 @@
   padding: 0 35px;
 }
 
-  .title_experiance_cards {
+  .title_cards {
     font-size: 20px;
   }
 
@@ -100,7 +100,7 @@
     padding: 50px 0px;
   }
 
-  .title_experiance_cards {
+  .title_cards {
     font-size: 20px;
     white-space: nowrap;
   }
@@ -345,7 +345,7 @@
     padding-left: 18px;
   }
 
-  .title_experiance_cards {
+  .title_cards {
     font-size: 20px;
   }
 
@@ -372,7 +372,7 @@
       font-size: 26px;
     }
 
-    .title_experiance_cards {
+    .title_cards {
       font-size: 22px;
     }
 
